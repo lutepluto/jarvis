@@ -78,3 +78,49 @@
   padding: 7px 10px;
   padding-left: 52px;
 }
+
+.navbar-top {
+  height: $navbar-top-height;
+  margin-bottom: 0;
+  background: $navbar-top-bg-color;
+
+  .navbar-brand {
+    float: none;
+    position: absolute;
+    width: $navbar-top-brand-width;
+    height: $navbar-top-height;
+    left: 50%;
+    margin-left: - $navbar-top-brand-width / 2;
+    padding: 15px;
+    line-height: $navbar-top-height - 15 * 2;
+    text-align: center;
+
+    > img {
+      height: 30px;
+      width: 30px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.navbar-top-nav {
+
+  > li {
+
+    > a {
+      padding: 20px 15px;
+    }
+
+    &:last-child {
+      margin-right: 40px;
+    }
+  }
+
+  .badge-pending .label {
+    position: absolute;
+    right: 4px;
+    top: 14px;
+    padding: 2px 4px 3px;
+    @include box-shadow(-1px 1px 0 $navbar-top-bg-color);
+  }
+}

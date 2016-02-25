@@ -124,3 +124,40 @@
     @include box-shadow(-1px 1px 0 $navbar-top-bg-color);
   }
 }
+
+.submenu-header {
+  padding: 30px 20px 0;
+  border-bottom: 1px solid $navbar-top-border-color;
+  background: $navbar-top-bg-color;
+}
+
+.submenu {
+
+  > li {
+
+    + li {
+      margin-left: 0;
+    }
+
+    > a {
+      padding: 10px 30px 5px;
+      border-radius: 0;
+      border-bottom: 5px solid transparent;
+      color: $gray-light;
+
+      &:hover, &:focus {
+        color: $gray;
+        background: $navbar-top-bg-color;
+        border-bottom-color: $color-primary;
+      }
+    }
+  }
+
+  li.active > a,
+  li.active > a:focus,
+  li.active > a:hover {
+    color: $gray;
+    background: $navbar-top-bg-color;
+    border-bottom-color: $color-primary;
+  }
+}

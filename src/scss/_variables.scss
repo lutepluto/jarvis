@@ -7,6 +7,13 @@ $font-family:                -app-system, "Helvetica Neue", "Arial", "PingFang S
 // ----------------------------------------
 $body-bg-color:              #2f4050;
 
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
 $color-primary:              #19aa8d;
 $color-warning:              #f8ac59;
 $color-danger:               #d9534f;
@@ -26,7 +33,8 @@ $nav-active-bg-color:        #293846;
 
 $navbar-top-height:          60px;
 $navbar-top-brand-width:     200px;
-$navbar-top-bg-color:        #f8f8f8;
+$navbar-top-bg-color:        #ffffff;
+$navbar-top-border-color:    #efefef;
 
 // Main Content
 // ----------------------------------------

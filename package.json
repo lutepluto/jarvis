@@ -16,7 +16,9 @@
   "author": "lutepluto",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.1"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
@@ -24,6 +26,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^2.3.1",
     "gulp-load-plugins": "^1.2.0",
-    "gulp-ruby-sass": "^2.0.6"
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-watch": "^4.3.5"
   }
 }

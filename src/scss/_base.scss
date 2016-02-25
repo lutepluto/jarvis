@@ -1,0 +1,21 @@
+// Base
+// ----------------------------------------
+
+body {
+  font-family: $font-family;
+  height: 100%;
+  background-color: $body-bg-color;
+}
+
+#dashboard {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+  min-height: $content-min-height;
+  margin: 0 0 0 $navbar-side-width;
+  padding: 0 15px;
+  background-color: $content-bg-color;
+}

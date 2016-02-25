@@ -1,0 +1,16 @@
+// Label
+// ----------------------------------------
+
+.label {
+  padding: 3px 8px 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.label-primary {
+  background-color: $color-primary;
+}
+
+.label-warning {
+  background-color: $color-warning;
+}

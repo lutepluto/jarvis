@@ -27,7 +27,7 @@
     
     <div id="dashboard">
       <nav class="navbar-default navbar-side" role="navigation">
-        <ul id="nav" class="nav nav-stacked">
+        <ul id="nav" class="nav nav-stacked" data-toggle="accordion">
           <li class="nav-header">
             <div class="profile-element">
               <span class="header-image">
@@ -40,7 +40,7 @@
             </div>
           </li>
           <li class="active">
-            <a href="#collapseModule" data-toggle="collapse" data-parent="#nav" aria-expanded="true" aria-controls="collapseModule">
+            <a href="#collapseModule" data-parent="#nav" aria-expanded="true" aria-controls="collapseModule">
               <i class="fa fa-th-large"></i>
               <span class="nav-label">模块管理</span>
               <span class="fa fa-angle-left arrow pull-right"></span>
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li>
-            <a href="#collapseGraphic" data-toggle="collapse" data-parent="#nav" aria-expanded="true" aria-controls="collapseGraphic">
+            <a href="#collapseGraphic" data-parent="#nav" aria-expanded="true" aria-controls="collapseGraphic">
               <i class="fa fa-bar-chart-o"></i>
               <span class="nav-label">图表管理</span>
               <span class="fa fa-angle-left arrow pull-right"></span>
@@ -135,7 +135,8 @@
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="dist/js/jarvis.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {

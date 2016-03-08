@@ -1,0 +1,84 @@
+// Table
+// ----------------------------------------
+
+.table {
+  > thead > tr > th,
+  > tbody > tr > td {
+    padding: $table-cell-padding;
+  }
+
+  > thead > tr > th {
+    vertical-align: middle;
+    background-color: $table-head-bg-color;
+    white-space: nowrap;
+  }
+
+  > tbody > tr {
+    > td {
+      background-color: $table-body-bg-color;  
+    }
+
+    &.active,
+    &.active:hover {
+      > td {
+        color: #fff;
+        background-color: $color-primary;
+        border-color: darken($color-primary, 5%);
+      }
+    }
+  }
+}
+
+.table-bordered {
+  border-color: $table-border-color;
+
+  > thead > tr > th,
+  > thead > tr > td,
+  > tbody > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > th,
+  > tfoot > tr > td {
+    border-left: none;
+    border-right: none;
+    border-color: $table-border-color;  
+  }
+
+  > thead > tr > th,
+  > thead > tr > td {
+    border-bottom-width: 2px;
+  }
+
+}
+
+.table-striped {
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-accent-bg-color;
+
+    > th,
+    > td {
+      background-color: transparent;
+    }
+  }
+}
+
+.table-condensed {
+  > thead > tr > th,
+  > thead > tr > td,
+  > tbody > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > th,
+  > tfoot > tr > td {
+    padding: $table-cell-padding / 2;
+  }
+}
+
+.table-hover {
+  > tbody > tr:hover {
+    background-color: $table-accent-bg-color;
+
+    > th,
+    > td {
+      background-color: transparent;
+    }
+  }
+}

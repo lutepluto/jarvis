@@ -5,8 +5,34 @@
   position: absolute;
   width: $navbar-side-width;
   background-color: transparent;
-
   @include transition(all .4s);
+
+  li {
+    + li {
+      margin-top: 0;
+    }
+
+    > a {
+      .fa, .glyphicon {
+        margin-right: 6px;
+      }
+
+      .arrow {
+        line-height: 20px;
+        @include transition(transform .3s ease);
+      }
+    }
+
+    &.active {
+      border-left: 4px solid $color-primary;
+      background: $nav-active-bg-color;
+      @include transition(all .4s);
+
+      > a .arrow {
+        @include rotate(-90deg);
+      }
+    }
+  }
 }
 
 .nav-header {
@@ -45,32 +71,6 @@
   &:hover {
     color: #fff;
     background-color: $nav-active-bg-color;
-  }
-}
-
-.navbar-side {
-  li {
-
-    &.active {
-      border-left: 4px solid $color-primary;
-      background: $nav-active-bg-color;
-
-      @include transition(all .4s);
-    }
-
-    + li {
-      margin-top: 0;
-    }
-
-    a {
-      .fa, .glyphicon {
-        margin-right: 6px;
-      }
-
-      .arrow {
-        line-height: 20px;
-      }
-    }
   }
 }
 

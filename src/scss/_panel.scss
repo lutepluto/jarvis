@@ -1,0 +1,60 @@
+// Panel
+// ----------------------------------------
+
+.panel {
+  border-radius: 0;
+  border: none;
+  color: $panel-text-color;
+}
+
+.panel-title {
+  padding: $panel-title-padding;
+  border-top: 3px solid $panel-border-color;
+  @include clearfix();
+
+  > h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    float: left;
+    font-size: $panel-title-font-size;
+  }
+}
+
+.panel-tools {
+  position: relative;
+  text-align: right;
+  line-height: 0;
+
+  > a {
+    font-size: $panel-title-font-size - 2;
+
+    &,
+    &:hover,
+    &:active {
+      color: $panel-tool-color;  
+    }
+
+    + a {
+      margin-left: 5px;
+    }
+  }
+}
+
+.panel-heading,
+.panel-body {
+  border-top: 1px solid $panel-border-color;
+  background-color: #fff;
+
+  > h3,
+  > h4,
+  > h5,
+  > p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.panel-heading {
+  border-radius: 0;
+  background-color: $panel-heading-bg-color;
+}

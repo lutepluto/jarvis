@@ -49,6 +49,7 @@ const Accordion = (($) => {
     static get Default() {}
 
     toggle(event) {
+      event.preventDefault()
       let $target = this._getTargetFromElement(event.currentTarget)
       $target.hasClass(ClassName.IN) ? this.hide($target) : this.show($target)
     }

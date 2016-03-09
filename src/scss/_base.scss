@@ -23,3 +23,38 @@ body {
 .wrapper-content {
   padding: 20px 10px 40px;
 }
+
+.block-heading {
+  margin-bottom: 15px;
+  border-bottom: $block-heading-border-width solid $block-heading-border-color;
+  font-size: $block-heading-font-size;
+  @include clearfix();
+
+  h2, h3 {
+    position: relative;
+    margin: 0;
+    padding: 10px 5px;
+    float: left;
+    font-size: $block-heading-font-size;
+    line-height: 1.2;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -$block-heading-border-width;
+      left: 0;
+      right: 0;
+      height: $block-heading-border-width;
+      background-color: $success-color;
+    }
+  }
+
+  .heading-tool {
+    padding-top: 10px;
+    text-align: right;
+
+    .btn {
+      font-size: 14px;
+    }
+  }
+}

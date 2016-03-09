@@ -1,0 +1,75 @@
+// Form
+// ----------------------------------------
+
+.form-control {
+  border-radius: $input-border-radius;
+}
+
+.form-horizontal {
+  .form-footer {
+    text-align: center;
+
+    > button + button {
+      margin-left: 20px;
+    }
+  }
+}
+
+.input-field-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $input-border-color;
+  background-color: #fff;
+
+  &:focus:not([readonly]) {
+    $focus-box-shadow: 0 1px 0 0 $success-color;
+
+    outline: none;
+    border-bottom-color: $success-color;
+    @include box-shadow($focus-box-shadow);
+
+    + label {
+      color: $success-color;
+    }
+  }
+
+  + label {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    margin-bottom: 0;
+    cursor: text;
+    color: $input-color;
+    @include transition(.2s ease-out);
+  }
+
+  + label.active {
+    font-size: 12px;
+    font-weight: 400;
+    @include translate(0, -140%);
+  }
+}
+
+.input-field-group.has-error {
+
+  .input-field {
+    $focus-error-box-shadow: 0 1px 0 0 $danger-color;
+
+    border-bottom-color: $danger-color;
+    @include box-shadow($focus-error-box-shadow);
+
+    + label {
+      color: $danger-color;
+    }
+  }
+}

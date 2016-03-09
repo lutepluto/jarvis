@@ -21,7 +21,16 @@ body {
 }
 
 .wrapper-content {
-  padding: 20px 10px 40px;
+  padding: 20px 10px 0;
+}
+
+.full-row {
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  @include clearfix();
 }
 
 .block-heading {

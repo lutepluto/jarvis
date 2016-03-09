@@ -14,7 +14,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$color-primary:              #19aa8d;
+$color-success:              #19aa8d;
 $color-warning:              #f8ac59;
 $color-danger:               #d9534f;
 
@@ -57,5 +57,3 @@ $panel-title-padding:        12px 15px 11px;
 $panel-title-font-size:      14px;
 $panel-tool-color:           #c4c4c4;
 $panel-heading-bg-color:     $table-accent-bg-color;
-
-

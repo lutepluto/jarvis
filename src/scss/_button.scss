@@ -1,0 +1,33 @@
+// Button
+// ----------------------------------------
+
+@mixin j-btn-variant($color, $bg-color, $border-color) {
+  $active-bg-color: lighten($bg-color, 8%);
+  $active-border-color: lighten($border-color, 8%);
+
+  color: $color;
+  border-color: $border-color;
+  background-color: $bg-color;
+  
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+    @include box-shadow($btn-active-box-shadow);
+  }
+}
+
+.j-btn {
+  border-radius: $btn-border-radius;
+  @include box-shadow($btn-box-shadow);
+
+  &.btn-default {
+    @include j-btn-variant($btn-default-color, $btn-default-bg-color, $btn-default-border-color);
+  }
+
+  &.btn-success {
+    @include j-btn-variant($btn-success-color, $btn-success-bg-color, $btn-success-border-color);
+  }
+}

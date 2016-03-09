@@ -14,6 +14,7 @@ $gray:                        lighten($gray-base, 33.5%) !default; // #555
 $gray-light:                  lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:                lighten($gray-base, 93.5%) !default; // #eee
 
+$default-color:               #b0bec5;
 $success-color:               #19aa8d;
 $warning-color:               #f8ac59;
 $danger-color:                #d9534f;
@@ -49,6 +50,13 @@ $navbar-top-border-color:     #efefef;
 // ----------------------------------------
 $btn-border-radius:           2px;
 $btn-default-padding:         5px 15px;
+
+$btn-box-shadow:              0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+$btn-active-box-shadow:       0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+
+$btn-default-color:           #fff;
+$btn-default-bg-color:        $default-color;
+$btn-default-border-color:    $default-color;
 
 $btn-success-color:           #fff;
 $btn-success-bg-color:        $success-color;

@@ -24,7 +24,7 @@
     }
 
     &.active {
-      border-left: 4px solid $color-success;
+      border-left: 4px solid $success-color;
       background: $nav-active-bg-color;
       @include transition(all .4s);
 
@@ -148,7 +148,7 @@
       &:hover, &:focus {
         color: $gray;
         background: $navbar-top-bg-color;
-        border-bottom-color: $color-success;
+        border-bottom-color: $success-color;
       }
     }
   }
@@ -158,6 +158,6 @@
   li.active > a:hover {
     color: $gray;
     background: $navbar-top-bg-color;
-    border-bottom-color: $color-success;
+    border-bottom-color: $success-color;
   }
 }

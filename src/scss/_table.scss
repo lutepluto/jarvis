@@ -22,8 +22,8 @@
     &.active:hover {
       > td {
         color: #fff;
-        background-color: $color-success;
-        border-color: darken($color-success, 5%);
+        background-color: $success-color;
+        border-color: darken($success-color, 5%);
       }
     }
   }

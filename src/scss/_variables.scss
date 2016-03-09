@@ -14,9 +14,9 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$color-success:              #19aa8d;
-$color-warning:              #f8ac59;
-$color-danger:               #d9534f;
+$success-color:              #19aa8d;
+$warning-color:              #f8ac59;
+$danger-color:               #d9534f;
 
 // Navbar
 // ----------------------------------------

@@ -8,9 +8,9 @@
 }
 
 .panel-title {
+  @extend .clearfix;
   padding: $panel-title-padding;
   border-top: 3px solid $panel-border-color;
-  @include clearfix();
 
   > h5 {
     margin-top: 0;

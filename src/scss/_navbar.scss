@@ -5,7 +5,7 @@
   position: absolute;
   width: $navbar-side-width;
   background-color: transparent;
-  @include transition(all .4s);
+  transition: all .4s;
 
   li {
     + li {
@@ -19,17 +19,17 @@
 
       .arrow {
         line-height: 20px;
-        @include transition(transform .3s ease);
+        transition: transform .3s ease;
       }
     }
 
     &.active {
       border-left: 4px solid $success-color;
       background: $nav-active-bg-color;
-      @include transition(all .4s);
+      transition: all .4s;
 
       > a .arrow {
-        @include rotate(-90deg);
+        transform: rotate(-90deg);
       }
     }
   }
@@ -121,7 +121,7 @@
     right: 4px;
     top: 14px;
     padding: 2px 4px 3px;
-    @include box-shadow(-1px 1px 0 $navbar-top-bg-color);
+    box-shadow: -1px 1px 0 $navbar-top-bg-color;
   }
 }
 

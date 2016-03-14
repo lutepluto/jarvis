@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
   sass = require('gulp-ruby-sass'),
+  autoprefixer = require('gulp-autoprefixer'),
   babel = require('gulp-babel')
 
 var path = require('path'),
@@ -38,6 +39,9 @@ gulp.task('sass', function() {
       style: 'expanded'
     })
     .on('error', sass.logError)
+    .pipe(autoprefixer({
+      browsers: ['ie >= 8', 'Firefox >= 10', 'Chrome >= 20', 'Opera >= 10', 'Safari >= 5']
+    }))
     .pipe(gulp.dest('dist/css/'))
 })
 

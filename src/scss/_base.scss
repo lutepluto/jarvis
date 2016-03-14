@@ -25,19 +25,19 @@ body {
 }
 
 .full-row {
+  @extend .clearfix;
   margin-left: -25px;
   margin-right: -25px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
-  @include clearfix();
 }
 
 .block-heading {
+  @extend .clearfix;
   margin-bottom: 15px;
   border-bottom: $block-heading-border-width solid $block-heading-border-color;
   font-size: $block-heading-font-size;
-  @include clearfix();
 
   h2, h3 {
     position: relative;

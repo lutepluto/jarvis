@@ -15,13 +15,13 @@
   &.active {
     border-color: $active-border-color;
     background-color: $active-bg-color;
-    @include box-shadow($btn-active-box-shadow);
+    box-shadow: $btn-active-box-shadow;
   }
 }
 
 .j-btn {
   border-radius: $btn-border-radius;
-  @include box-shadow($btn-box-shadow);
+  box-shadow: $btn-box-shadow;
 
   &.btn-default {
     @include j-btn-variant($btn-default-color, $btn-default-bg-color, $btn-default-border-color);

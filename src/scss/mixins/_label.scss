@@ -1,0 +1,10 @@
+// label variant
+
+@mixin label-variant($bg-color) {
+  background-color: $bg-color;
+
+  &[href]:focus,
+  &[href]:hover {
+    background-color: lighten($bg-color, 8%);  
+  }
+}

@@ -6,10 +6,18 @@
   font-weight: 600;
 }
 
+.label-default {
+  @include label-variant($label-default-bg);
+}
+
 .label-success {
-  background-color: $success-color;
+  @include label-variant($label-success-bg);
 }
 
 .label-warning {
-  background-color: $warning-color;
+  @include label-variant($label-warning-bg);
+}
+
+.label-danger {
+  @include label-variant($label-danger-bg);
 }

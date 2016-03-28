@@ -11,4 +11,8 @@
   &.btn-success {
     @include btn-variant($btn-success-color, $btn-success-bg, $btn-success-border);
   }
+
+  &.btn-danger {
+    @include btn-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  }
 }

@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   sass = require('gulp-ruby-sass'),
   autoprefixer = require('gulp-autoprefixer'),
-  babel = require('gulp-babel')
+  babel = require('gulp-babel'),
+  eslint = require('gulp-eslint')
 
 var path = require('path'),
   ROOT = path.resolve(__dirname)
@@ -46,9 +47,19 @@ gulp.task('sass', function() {
 })
 
 /**
+ * -------------------- Lint task --------------------
+ */
+gulp.task('lint', function() {
+  return gulp.src('src/scripts/**/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError())
+})
+
+/**
  * -------------------- Script task --------------------
  */
-gulp.task('script', function() {
+gulp.task('script', ['lint'], function() {
   return gulp.src(['src/scripts/util.js', 'src/scripts/!(util)*.js'])
     .pipe(babel())
     .pipe(concat('jarvis.js'))

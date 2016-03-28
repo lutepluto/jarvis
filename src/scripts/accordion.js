@@ -3,10 +3,10 @@ import Util from './util'
 const Accordion = (($) => {
 
   const NAME                = 'accordion'
-  const VERSION             = '0.0.1'
+  const VERSION             = '0.0.1'  // eslint-disable-line no-unused-vars
   const DATA_KEY            = 'jar.accordion'
   const EVENT_KEY           = `.${EVENT_KEY}`
-  const JQUERY_NO_CONFLICT  = $.fn[NAME]
+  const JQUERY_NO_CONFLICT  = $.fn[NAME]  // eslint-disable-line no-unused-vars
   const TRANSITION_DURATION = 600
 
   const Event = {
@@ -37,7 +37,7 @@ const Accordion = (($) => {
 
   class Accordion {
 
-    constructor(element, options) {
+    constructor(element, options) {  // eslint-disable-line no-unused-vars
       this._element = $(element)
       // this._bellows = this._getBellows()
       
@@ -60,6 +60,7 @@ const Accordion = (($) => {
       }
 
       let $actives, $activesTarget
+      // eslint-disable-next-line no-unused-vars
       let selector = `.${ClassName.ACTIVE} [data-parent="#${this._element[0].id}"]`
       $actives = this._element.find(`.${ClassName.ACTIVE} [data-parent="#${this._element[0].id}"]`)
       if ($actives.length) {

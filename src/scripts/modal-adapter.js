@@ -16,7 +16,7 @@ $(document).on('click', '[data-toggle="modal"]', (e) => {
       $(`<div class="modal fade" id="${id}" role="dialog" aria-hidden="true">${data}</div>`)
         .modal()
         .on('hidden.bs.modal', e => $(e.currentTarget).remove())
-        .on('shown.bs.modal', e => $this.trigger('shown.modal'))
+        .on('shown.bs.modal', () => $this.trigger('shown.modal'))
     })
   }
 }).off('click.bs.modal.data-api')

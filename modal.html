@@ -1,15 +1,28 @@
-<div class="modal-dialog " style="width: 700px;">
+<div class="modal-dialog primary">
   <div class="modal-content">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <h4 class="modal-title">Modal title</h4>
+      <h4 class="modal-title">添加模块</h4>
     </div>
-    <div class="modal-body">
-      <p>One fine body&hellip;</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
-  </div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
+    <form class="form-horizontal">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="control-label col-xs-3">模块名称</label>
+          <div class="col-xs-7">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-xs-3 control-label">模块别名</label>
+          <div class="col-xs-7">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">确  定</button>
+        <button type="button" class="btn btn-default" daata-dismiss="modal">取  消</button>
+      </div>
+    </form>
+  </div>
+</div>

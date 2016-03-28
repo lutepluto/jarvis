@@ -5,7 +5,7 @@
 
 @import "utility";
 
-
+// Core
 @import "base";
 @import "label";
 @import "button";
@@ -13,3 +13,6 @@
 @import "table";
 @import "panel";
 @import "form";
+
+// Components
+@import "modal";

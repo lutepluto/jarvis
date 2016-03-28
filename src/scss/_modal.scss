@@ -1,0 +1,40 @@
+// Modal override
+
+.modal-content {
+  border-radius: $modal-border-radius;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  color: $modal-header-color;
+  background-color: $modal-header-bg;
+  background-image: linear-gradient(to right, lighten($modal-header-bg, 5%) 0%, $modal-header-bg 100%);
+
+  .modal-title {
+    font-size: $modal-header-font-size;
+  }
+
+  .close {
+    padding: 0 4px 2px;
+    color: $modal-header-color;
+    background-color: darken($modal-header-bg, 5%);
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+
+.modal-body {
+  padding-top: $modal-body-padding;
+  padding-bottom: $modal-body-padding;
+}
+
+.modal-footer {
+  text-align: center;
+  background-color: $modal-footer-bg;
+
+  button,
+  .btn {
+    width: $modal-btn-width;
+  }
+}

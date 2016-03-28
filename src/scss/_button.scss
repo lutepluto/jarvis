@@ -1,33 +1,14 @@
-// Button
-// ----------------------------------------
+// Enhanced button style
 
-@mixin j-btn-variant($color, $bg-color, $border-color) {
-  $active-bg-color: lighten($bg-color, 8%);
-  $active-border-color: lighten($border-color, 8%);
-
-  color: $color;
-  border-color: $border-color;
-  background-color: $bg-color;
-  
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    border-color: $active-border-color;
-    background-color: $active-bg-color;
-    box-shadow: $btn-active-box-shadow;
-  }
-}
-
-.j-btn {
+.btn {
   border-radius: $btn-border-radius;
-  box-shadow: $btn-box-shadow;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
   &.btn-default {
-    @include j-btn-variant($btn-default-color, $btn-default-bg-color, $btn-default-border-color);
+    @include btn-variant($btn-default-color, $btn-default-bg, $btn-default-border);
   }
 
   &.btn-success {
-    @include j-btn-variant($btn-success-color, $btn-success-bg-color, $btn-success-border-color);
+    @include btn-variant($btn-success-color, $btn-success-bg, $btn-success-border);
   }
 }

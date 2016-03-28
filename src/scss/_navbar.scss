@@ -1,5 +1,5 @@
 // Navbar
-// ----------------------------------------
+// Side navbar and top navbar
 
 .navbar-side {
   position: absolute;
@@ -25,7 +25,7 @@
 
     &.active {
       border-left: 4px solid $success-color;
-      background: $nav-active-bg-color;
+      background: $nav-active-bg;
       transition: all .4s;
 
       > a .arrow {
@@ -64,13 +64,13 @@
 
 .nav > li > a {
   font-weight: 600;
-  color: $nav-text-color;
+  color: $nav-color;
   padding: 14px 20px;
 
   &:focus,
   &:hover {
     color: #fff;
-    background-color: $nav-active-bg-color;
+    background-color: $nav-active-bg;
   }
 }
 
@@ -82,7 +82,7 @@
 .navbar-top {
   height: $navbar-top-height;
   margin-bottom: 0;
-  background: $navbar-top-bg-color;
+  background: $navbar-top-bg;
 
   .navbar-brand {
     float: none;
@@ -121,14 +121,14 @@
     right: 4px;
     top: 14px;
     padding: 2px 4px 3px;
-    box-shadow: -1px 1px 0 $navbar-top-bg-color;
+    box-shadow: -1px 1px 0 $navbar-top-bg;
   }
 }
 
 .submenu-header {
   padding: 30px 20px 0;
-  border-bottom: 1px solid $navbar-top-border-color;
-  background: $navbar-top-bg-color;
+  border-bottom: 1px solid $navbar-top-border;
+  background: $navbar-top-bg;
 }
 
 .submenu {
@@ -147,7 +147,7 @@
 
       &:hover, &:focus {
         color: $gray;
-        background: $navbar-top-bg-color;
+        background: $navbar-top-bg;
         border-bottom-color: $success-color;
       }
     }
@@ -157,7 +157,7 @@
   li.active > a:focus,
   li.active > a:hover {
     color: $gray;
-    background: $navbar-top-bg-color;
+    background: $navbar-top-bg;
     border-bottom-color: $success-color;
   }
 }

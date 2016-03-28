@@ -1,0 +1,19 @@
+// button variants
+
+@mixin btn-variant($color, $bg-color, $border-color) {
+  $active-bg-color: lighten($bg-color, 8%);
+  $active-border-color: lighten($border-color, 8%);
+
+  color: $color;
+  border-color: $border-color;
+  background-color: $bg-color;
+  
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+}

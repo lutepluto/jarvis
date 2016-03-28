@@ -1,5 +1,4 @@
 // Table
-// ----------------------------------------
 
 .table {
   > thead > tr > th,
@@ -9,20 +8,20 @@
 
   > thead > tr > th {
     vertical-align: middle;
-    background-color: $table-head-bg-color;
+    background-color: $table-head-bg;
     white-space: nowrap;
   }
 
   > tbody > tr {
     > td {
-      background-color: $table-body-bg-color;  
+      background-color: $table-body-bg;  
     }
 
     &.active,
     &.active:hover {
       > td {
         color: #fff;
-        background-color: $success-color;
+        background-color: $table-active-bg;
         border-color: darken($success-color, 5%);
       }
     }
@@ -30,7 +29,7 @@
 }
 
 .table-bordered {
-  border-color: $table-border-color;
+  border-color: $table-border;
 
   > thead > tr > th,
   > thead > tr > td,
@@ -40,7 +39,7 @@
   > tfoot > tr > td {
     border-left: none;
     border-right: none;
-    border-color: $table-border-color;  
+    border-color: $table-border;  
   }
 
   > thead > tr > th,
@@ -52,7 +51,7 @@
 
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
-    background-color: $table-accent-bg-color;
+    background-color: $table-accent-bg;
 
     > th,
     > td {
@@ -74,7 +73,7 @@
 
 .table-hover {
   > tbody > tr:hover {
-    background-color: $table-accent-bg-color;
+    background-color: $table-accent-bg;
 
     > th,
     > td {

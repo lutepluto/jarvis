@@ -1,16 +1,15 @@
 // Panel
-// ----------------------------------------
 
 .panel {
   border-radius: 0;
   border: none;
-  color: $panel-text-color;
+  color: $panel-color;
 }
 
 .panel-title {
   @extend .clearfix;
   padding: $panel-title-padding;
-  border-top: 3px solid $panel-border-color;
+  border-top: 3px solid $panel-border;
 
   > h5 {
     margin-top: 0;
@@ -42,7 +41,7 @@
 
 .panel-heading,
 .panel-body {
-  border-top: 1px solid $panel-border-color;
+  border-top: 1px solid $panel-border;
   background-color: #fff;
 
   > h3,
@@ -56,5 +55,5 @@
 
 .panel-heading {
   border-radius: 0;
-  background-color: $panel-heading-bg-color;
+  background-color: $panel-heading-bg;
 }

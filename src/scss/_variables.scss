@@ -1,92 +1,89 @@
-
 // Typography
-// ----------------------------------------
-$font-family:                 -app-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+
+$font-family:     -app-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 
 // Color
-// ----------------------------------------
-$body-bg-color:               #2f4050;
 
-$gray-base:                   #000 !default;
-$gray-darker:                 lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:                   lighten($gray-base, 20%) !default;   // #333
-$gray:                        lighten($gray-base, 33.5%) !default; // #555
-$gray-light:                  lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:                lighten($gray-base, 93.5%) !default; // #eee
+$body-bg:         #2f4050;
 
-$default-color:               #b0bec5;
-$success-color:               #19aa8d;
-$warning-color:               #f8ac59;
-$danger-color:                #d9534f;
+$gray-base:       #000 !default;
+$gray-darker:     lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:       lighten($gray-base, 20%) !default;   // #333
+$gray:            lighten($gray-base, 33.5%) !default; // #555
+$gray-light:      lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:    lighten($gray-base, 93.5%) !default; // #eee
 
-// Main Content
-// ----------------------------------------
-$content-bg-color:            #f7f7f8;
-$content-min-height:          568px;
+$default-color:   #b0bec5;
+$success-color:   #19aa8d;
+$warning-color:   #f8ac59;
+$danger-color:    #d9534f;
 
-$block-heading-font-size:     16px;
-$block-heading-border-width:  2px;
-$block-heading-border-color:  #ddd;
+// Layout
+
+$content-bg: #f7f7f8;
+$content-min-height: 568px;
+
+$block-heading-font-size: 16px;
+$block-heading-border-width: 2px;
+$block-heading-border: #ddd;
+$block-heading-bg: $success-color;
 
 // Navbar
-// ----------------------------------------
-$navbar-side-width:           220px;
 
-$nav-header-link-color:       #def4ed;
-$nav-header-light-color:      #8095a8;
+$navbar-side-width: 220px;
 
-$nav-header-bg-image:         "../images/header-profile.png";
-$nav-header-image-size:       48px;
+$nav-header-link-color: #def4ed;
+$nav-header-light-color: #8095a8;
 
-$nav-text-color:              #a7b1c2;
-$nav-active-bg-color:         #293846;
+$nav-header-bg-image: "../images/header-profile.png";
+$nav-header-image-size: 48px;
 
-$navbar-top-height:           60px;
-$navbar-top-brand-width:      200px;
-$navbar-top-bg-color:         #ffffff;
-$navbar-top-border-color:     #efefef;
+$nav-color: #a7b1c2;
+$nav-active-bg: #293846;
+
+$navbar-top-height: 60px;
+$navbar-top-brand-width: 200px;
+$navbar-top-bg: #fff;
+$navbar-top-border: #efefef;
 
 // Button
-// ----------------------------------------
-$btn-border-radius:           2px;
-$btn-default-padding:         5px 15px;
 
-$btn-box-shadow:              0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-$btn-active-box-shadow:       0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+$btn-border-radius: 2px;
+$btn-default-padding: 5px 15px;
 
-$btn-default-color:           #fff;
-$btn-default-bg-color:        $default-color;
-$btn-default-border-color:    $default-color;
+$btn-default-color: #fff;
+$btn-default-bg: $default-color;
+$btn-default-border: $default-color;
 
-$btn-success-color:           #fff;
-$btn-success-bg-color:        $success-color;
-$btn-success-border-color:    $success-color;
+$btn-success-color: #fff;
+$btn-success-bg: $success-color;
+$btn-success-border: $success-color;
 
 // Table
-// ----------------------------------------
-$table-border-color:          #e0e7eb;
-$table-head-bg-color:         #e7eaec;
-$table-body-bg-color:         #fff;
-$table-accent-bg-color:       #f3f6fb;
-$table-cell-padding:          10px;
+
+$table-border: #e0e7eb;
+$table-head-bg: #e7eaec;
+$table-body-bg: #fff;
+$table-active-bg: $success-color;
+$table-accent-bg: #f3f6fb;
+$table-cell-padding: 10px;
 
 // Panel
-// ----------------------------------------
-$panel-border-color:          $table-border-color;
-$panel-text-color:            #676a6c;
-$panel-title-padding:         12px 15px 11px;
-$panel-title-font-size:       14px;
-$panel-tool-color:            #c4c4c4;
-$panel-heading-bg-color:      $table-accent-bg-color;
+
+$panel-border: $table-border;
+$panel-color: #676a6c;
+$panel-title-padding: 12px 15px 11px;
+$panel-title-font-size: 14px;
+$panel-tool-color: #c4c4c4;
+$panel-heading-bg: $table-accent-bg;
 
 // Form
-// ----------------------------------------
-$input-border-radius:         2px;
-$input-box-shadow:            inset 1px 2px 5px rgba(0, 0, 0, .15);
 
-$input-height:                34px;
-$input-border-color:          #9e9e9e;
-$input-color:                 #9e9e9e;
+$input-border-radius: 2px;
+
+$input-height: 34px;
+$input-border: #9e9e9e;
+$input-color: #9e9e9e;
 
 
 

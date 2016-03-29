@@ -32,6 +32,10 @@
         transform: rotate(-90deg);
       }
     }
+
+    .nav-second-level > .active {
+      border-left: none;
+    }
   }
 }
 
@@ -74,9 +78,16 @@
   }
 }
 
-.nav-second-level li a {
-  padding: 7px 10px;
-  padding-left: 52px;
+.nav-second-level li {
+  > a {
+    padding: 7px 10px;
+    padding-left: 52px;
+  }
+
+  &.active > a {
+    color: #fff;
+    background-color: $nav-active-bg; 
+  }
 }
 
 .navbar-top {
@@ -104,7 +115,6 @@
 }
 
 .navbar-top-nav {
-
   > li {
 
     > a {
@@ -132,7 +142,6 @@
 }
 
 .submenu {
-
   > li {
 
     + li {

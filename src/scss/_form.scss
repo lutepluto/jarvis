@@ -2,6 +2,12 @@
 
 .form-control {
   border-radius: $input-border-radius;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $form-control-hover-border;
+    box-shadow: none;
+  }
 }
 
 .form-horizontal {
@@ -58,7 +64,6 @@
 }
 
 .input-field-group.has-error {
-
   .input-field {
     border-bottom-color: $danger-color;
     box-shadow: 0 1px 0 0 $danger-color;

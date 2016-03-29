@@ -153,15 +153,39 @@
               </div>
               <form class="form-horizontal">
                 <div class="form-group">
-                  <label for="exampleInputEmail1" class="control-label col-xs-2">邮箱</label>
+                  <label for="normalInput" class="control-label col-xs-3">Normal input</label>
                   <div class="col-xs-9">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="text" class="form-control" id="normalInput" placeholder="I am a normal form control input">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputPassword3" class="col-xs-2 control-label">密码</label>
+                  <label for="disabledInput" class="col-xs-3 control-label">Disabled input</label>
                   <div class="col-xs-9">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    <input type="text" class="form-control" id="disabledInput" disabled placeholder="I am a disabled form control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="readonlyInput" class="col-xs-3 control-label">Readonly input</label>
+                  <div class="col-xs-9">
+                    <input type="text" class="form-control" id="readonlyInput" readonly placeholder="I am a readonly form control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="select" class="col-xs-3 control-label">Select</label>
+                  <div class="col-xs-9">
+                    <select class="form-control" id="select">
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-3">Control size</label>
+                  <div class="col-xs-9">
+                    <p><input class="form-control input-lg" placeholder=".input-lg" type="text"></p>
+                    <p><input class="form-control" placeholder="default input" type="text"></p>
+                    <p><input class="form-control input-sm" placeholder=".input-sm" type="text"></p>
                   </div>
                 </div>
                 <div class="col-xs-12 form-footer">

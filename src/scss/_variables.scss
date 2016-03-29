@@ -89,10 +89,11 @@ $panel-heading-bg: $table-accent-bg;
 // Form
 
 $input-border-radius: 2px;
-
 $input-height: 34px;
 $input-border: #9e9e9e;
 $input-color: #9e9e9e;
+
+$form-control-hover-border: lighten($success-color, 5%);
 
 // Modal
 

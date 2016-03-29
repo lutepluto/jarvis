@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
 
     <!-- Jarvis -->
-    <link rel="stylesheet" type="text/css" href="css/jarvis.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/jarvis.css">
 
     <style type="text/css">
       .table img {
@@ -48,34 +48,29 @@
             </div>
           </li>
           <li class="active">
-            <a href="#collapseModule" data-parent="#nav" aria-expanded="true" aria-controls="collapseModule">
+            <a href="#collapseCss" data-parent="#nav" aria-expanded="true" aria-controls="collapseCss">
               <i class="fa fa-th-large"></i>
               <span class="nav-label">CSS</span>
               <span class="fa fa-angle-left arrow pull-right"></span>
             </a>
-            <ul id="collapseModule" class="nav nav-stacked nav-second-level collapse in">
-              <li><a href="#">Table</a></li>
-              <li><a href="#">页面列表</a></li>
-              <li><a href="#">内容列表<span class="label label-success pull-right">SPECIAL</span></a></li>
+            <ul id="collapseCss" class="nav nav-stacked nav-second-level collapse in">
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="color.html">Color</a></li>
+              <li class="active"><a href="table.html">Table</a></li>
+              <li><a href="form.html">Form</a></li>
+              <li><a href="button.html">Button</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="#collapseComponent" data-parent="#nav" aria-expanded="false" aria-controls="collapseComponent">
               <i class="fa fa-diamond"></i>
-              <span class="nav-label">布局管理</span>
+              <span class="nav-label">Component</span>
+              <span class="fa fa-angle-left arrow pull-right"></span>
               <span class="label label-warning pull-right">NEW</span>
             </a>
-          </li>
-          <li>
-            <a href="#collapseGraphic" data-parent="#nav" aria-expanded="true" aria-controls="collapseGraphic">
-              <i class="fa fa-bar-chart-o"></i>
-              <span class="nav-label">图表管理</span>
-              <span class="fa fa-angle-left arrow pull-right"></span>
-            </a>
-            <ul id="collapseGraphic" class="nav nav-stacked nav-second-level collapse">
-              <li><a href="#">柱状图</a></li>
-              <li><a href="#">饼图</a></li>
-              <li><a href="#">点阵图</a></li>
+            <ul id="collapseComponent" class="nav nav-stacked nav-second-level collapse">
+              <li><a href="navbar.html">Navbar</a></li>
+              <li><a href="panel.html">Panel</a></li>
             </ul>
           </li>
         </ul>
@@ -136,10 +131,10 @@
           </nav>
           <div class="submenu-header">
             <ul class="nav nav-pills submenu">
-              <li class="active"><a href="#">运营数据</a></li>
-              <li><a href="#">活动发布</a></li>
-              <li><a href="#">课程资料</a></li>
-              <li><a href="#">线下推广</a></li>
+              <li class="active"><a href="#">Submenu 1</a></li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+              <li><a href="#">Submenu 4</a></li>
             </ul>
           </div>
         </div>
@@ -191,117 +186,13 @@
             </div>
           </div>
 
-          <!-- Panel -->
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-heading">
-                  <h3><i class="fa fa-envelope-o"></i> New Messages</h3>
-                  <small>You have 22 new messages and 16 waiting in draft folder.</small>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Form -->
-          <div class="full-row" style="padding-bottom: 40px;">
-            <div class="col-xs-6">
-              <div class="block-heading">
-                <h2>横排表单</h2>
-                <div class="heading-tool">
-                  <a href="modal.html" class="label label-success" data-toggle="modal" data-target="#myModal">新建</a>
-                </div>
-              </div>
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="control-label col-xs-2">邮箱</label>
-                  <div class="col-xs-9">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-xs-2 control-label">密码</label>
-                  <div class="col-xs-9">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="col-xs-12 form-footer">
-                  <button type="submit" class="btn btn-success">确 定</button>
-                  <button type="reset" class="btn btn-default">取 消</button>
-                </div>
-              </form>
-            </div>
-
-            <div class="col-xs-6">
-              <form>
-                <div class="input-field-group">
-                  <input type="email" class="input-field" id="exampleInputEmail1-2" >
-                  <label for="exampleInputEmail1-2">邮箱</label>
-                </div>
-                <div class="input-field-group has-error">
-                  <input type="password" class="input-field" id="exampleInputPassword1-2" >
-                  <label for="exampleInputPassword1-2">密码</label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-success">Submit</button>
-                <button type="reset" class="btn btn-danger">Reset</button>
-              </form>
-            </div>
-          </div>
-
-          
         </div>
       </div>
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="js/jarvis.js"></script>
+    <script src="../dist/js/jarvis.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         var $mainContainer = $('.main-container')

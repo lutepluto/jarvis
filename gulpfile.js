@@ -60,7 +60,11 @@ gulp.task('lint', function() {
  * -------------------- Script task --------------------
  */
 gulp.task('script', ['lint'], function() {
-  return gulp.src(['src/scripts/util.js', 'src/scripts/!(util)*.js'])
+  return gulp.src([
+      'src/scripts/util.js',
+      'src/scripts/modal-adapter.js',
+      'src/scripts/accordion.js'
+    ])
     .pipe(babel())
     .pipe(concat('jarvis.js'))
     .pipe(gulp.dest('dist/js/'))

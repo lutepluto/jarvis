@@ -19,7 +19,8 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "select2": "^4.0.2"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-umd": "^6.6.5",

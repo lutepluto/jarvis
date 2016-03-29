@@ -8,13 +8,13 @@
     <title>Bootstrap Jarvis Template</title>
 
     <!-- Bootstap -->
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
 
     <!-- Jarvis -->
-    <link rel="stylesheet" type="text/css" href="dist/css/jarvis.css">
+    <link rel="stylesheet" type="text/css" href="css/jarvis.css">
 
     <style type="text/css">
       .table img {
@@ -299,10 +299,42 @@
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="dist/js/jarvis.js"></script>
-    <script src="index.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/jarvis.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var $mainContainer = $('.main-container')
+        $(window).on('load resize', function() {
+          $mainContainer.css('min-height', window.innerHeight)
+        })
+
+        $('tbody').on('change', 'input[type="checkbox"]', function(e) {
+          e.currentTarget.checked ?
+            $(e.currentTarget).parentsUntil('tbody').last().addClass('active') :
+            $(e.currentTarget).parentsUntil('tbody').last().removeClass('active')
+        })
+
+        $('thead').on('change', 'input[type="checkbox"]', function(e) {
+            var $checkboxes = $(e.currentTarget)
+              .parentsUntil('table')
+              .last()
+              .next('tbody')
+              .find('tr > td:first-child > input[type="checkbox"]')
+              .each(function() {
+                $(this).prop('checked', e.currentTarget.checked).change()
+              })
+        })
+
+        $('.input-field').focus(function(e) {
+          $(e.currentTarget).next('label').addClass('active')
+        }).blur(function(e) {
+          var $input
+          ($input = $(e.currentTarget)) && !$input.val().trim() ?
+            $input.next('label').removeClass('active') : void 0
+        })
+      })
+    </script>
 
   </body>
 </html>

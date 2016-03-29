@@ -1,7 +1,5 @@
 // Modal adpater for AJAX loading modal
 
-import $ from 'jquery'
-
 $(document).on('click', '[data-toggle="modal"]', (e) => {
   e.preventDefault()
   let $this = $(e.currentTarget),

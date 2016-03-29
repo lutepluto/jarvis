@@ -74,7 +74,7 @@ gulp.task('script', ['lint'], function() {
  * -------------------- Watch task --------------------
  */
 gulp.task('watch', function() {
-  gulp.watch('src/scss/*.scss', ['sass'])
+  gulp.watch('src/scss/**/*.scss', ['sass'])
   gulp.watch('src/scripts/*.js', ['script'])
   gulp.watch('src/images/*', ['image'])
 })

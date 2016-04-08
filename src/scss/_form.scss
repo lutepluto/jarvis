@@ -6,7 +6,6 @@
 
   &:focus {
     border-color: $form-control-hover-border;
-    box-shadow: none;
   }
 }
 
@@ -17,6 +16,45 @@
 
     > button + button {
       margin-left: 20px;
+    }
+  }
+}
+
+// validation states
+.has-success {
+  .checkbox,
+  .checkbox-inline,
+  .control-label,
+  .help-block,
+  .radio,
+  .radio-inline,
+  label {
+    color: $form-control-success-color;
+  }
+
+  .form-control {
+    border-color: $form-control-success-border;
+    &:focus {
+      border-color: darken($form-control-success-border, 5%);
+    }
+  }
+}
+
+.has-error {
+  .checkbox,
+  .checkbox-inline,
+  .control-label,
+  .help-block,
+  .radio,
+  .radio-inline,
+  label {
+    color: $form-control-danger-color;
+  }
+
+  .form-control {
+    border-color: $form-control-danger-border;
+    &:focus {
+      border-color: darken($form-control-danger-border, 5%);
     }
   }
 }

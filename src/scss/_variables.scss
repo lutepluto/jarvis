@@ -91,8 +91,11 @@ $input-border-radius: 2px;
 $input-height: 34px;
 $input-border: #9e9e9e;
 $input-color: #9e9e9e;
-
 $form-control-hover-border: lighten($success-color, 5%);
+$form-control-success-color: $success-color;
+$form-control-success-border: $form-control-hover-border;
+$form-control-danger-color: $danger-color;
+$form-control-danger-border: lighten($danger-color, 5%);
 
 // Modal
 

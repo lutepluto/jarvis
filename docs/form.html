@@ -225,11 +225,6 @@
     <script src="../dist/js/jarvis.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var $mainContainer = $('.main-container')
-        $(window).on('load resize', function() {
-          $mainContainer.css('min-height', window.innerHeight)
-        })
-
         $('.input-field').focus(function(e) {
           $(e.currentTarget).next('label').addClass('active')
         }).blur(function(e) {

@@ -309,11 +309,6 @@
     <script src="../dist/js/jarvis.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var $mainContainer = $('.main-container')
-        $(window).on('load resize', function() {
-          $mainContainer.css('min-height', window.innerHeight)
-        })
-
         $('tbody').on('change', 'input[type="checkbox"]', function(e) {
           e.currentTarget.checked ?
             $(e.currentTarget).parentsUntil('tbody').last().addClass('active') :

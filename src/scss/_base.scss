@@ -1,8 +1,13 @@
 // Base and global layout styles
 
+html, body, #dashboard {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: $font-family;
-  height: 100%;
   background-color: $body-bg;
 }
 
@@ -13,7 +18,8 @@ body {
 
 .main-container {
   position: relative;
-  min-height: $content-min-height;
+  height: auto;
+  min-height: 100%;
   margin: 0 0 0 $navbar-side-width;
   padding: 0 15px;
   background-color: $content-bg;

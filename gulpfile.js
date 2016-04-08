@@ -71,6 +71,25 @@ gulp.task('script', ['lint'], function() {
 })
 
 /**
+ * -------------------- Vendor task --------------------
+ */
+gulp.task('vendorjs', function() {
+  return gulp.src([
+      'node_modules/select2/dist/js/select2.js'
+    ])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('dist/js/'))
+})
+
+gulp.task('vendorcss', function() {
+  return gulp.src([
+      'node_modules/select2/dist/css/select2.css'
+    ])
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest('dist/css/'))
+})
+
+/**
  * -------------------- Watch task --------------------
  */
 gulp.task('watch', function() {
@@ -82,4 +101,4 @@ gulp.task('watch', function() {
 /**
  * -------------------- Dev task --------------------
  */
-gulp.task('dev', ['connect', 'watch'])
+gulp.task('dev', ['connect', 'vendorcss', 'vendorjs', 'watch'])

@@ -21,13 +21,13 @@ body {
 }
 
 .wrapper-content {
-  padding: 20px 10px 0;
+  padding: 20px 0 40px;
 }
 
 .full-row {
   @extend .clearfix;
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -15px;
+  margin-right: -15px;
   padding: 20px 10px;
   background-color: #fff;
 }

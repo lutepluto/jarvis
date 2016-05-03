@@ -14,6 +14,15 @@ var path = require('path'),
   ROOT = path.resolve(__dirname)
 
 /**
+ * -------------------- Clean task --------------------
+ */
+gulp.task('clean', function(cb) {
+  return del([
+    'dist'
+  ], cb)  
+})
+
+/**
  * -------------------- Connect task --------------------
  */
 gulp.task('connect', function() {
@@ -73,20 +82,46 @@ gulp.task('script', ['lint'], function() {
 /**
  * -------------------- Vendor task --------------------
  */
-gulp.task('vendorjs', function() {
+gulp.task('vendor:font', function() {
+  return gulp.src([
+      'node_modules/font-awesome/fonts/**'
+    ])
+    .pipe(gulp.dest('dist/fonts'))
+})
+
+gulp.task('vendor:css', function() {
+  return gulp.src([
+      'node_modules/font-awesome/css/font-awesome.css',
+      'node_modules/select2/dist/css/select2.css'
+    ])
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest('dist/css'))
+})
+
+gulp.task('vendor:js', function() {
   return gulp.src([
       'node_modules/select2/dist/js/select2.js'
     ])
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('dist/js/'))
+    .pipe(gulp.dest('dist/js'))
 })
 
-gulp.task('vendorcss', function() {
-  return gulp.src([
-      'node_modules/select2/dist/css/select2.css'
-    ])
-    .pipe(concat('vendor.css'))
-    .pipe(gulp.dest('dist/css/'))
+/**
+ * -------------------- Bootstrap task --------------------
+ */
+gulp.task('bootstrap:font', function() {
+  return gulp.src('node_modules/bootstrap/dist/fonts/**')
+           .pipe(gulp.dest('dist/fonts'))
+})
+
+gulp.task('bootstrap:css', function() {
+  return gulp.src('node_modules/bootstrap/dist/css/bootstrap.css')
+           .pipe(gulp.dest('dist/css'))
+})
+
+gulp.task('bootstrap:js', function() {
+  return gulp.src('node_modules/bootstrap/dist/js/bootstrap.js')
+           .pipe(gulp.dest('dist/js'))
 })
 
 /**
@@ -101,4 +136,22 @@ gulp.task('watch', function() {
 /**
  * -------------------- Dev task --------------------
  */
-gulp.task('dev', ['connect', 'vendorcss', 'vendorjs', 'watch'])
+gulp.task('dev', ['connect', 'vendor:font', 'vendor:css', 'vendor:js', 'watch'])
+
+/**
+ * -------------------- Build task --------------------
+ */
+gulp.task('build', ['image', 'sass', 'script'], function() {
+  gulp.start([
+    'bootstrap:font', 'bootstrap:css', 'bootstrap:js',
+    'vendor:font', 'vendor:css', 'vendor:js'
+  ])
+})
+
+gulp.task('default', ['clean'], function() {
+  gulp.start('build')
+})
+
+
+
+

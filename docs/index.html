@@ -35,55 +35,70 @@
 
       <!-- Side Navbar -->
       <nav class="navbar-default navbar-side" role="navigation">
-        <ul id="nav" class="nav nav-stacked" data-toggle="accordion">
-          <li class="nav-header">
-            <div class="profile-element">
-              <span class="header-image">
-                <img class="img-circle" src="http://ww3.sinaimg.cn/mw690/773cdb49gw1ehog9vbmutj2050050dg2.jpg">
-              </span>
-              <a href="#">
-                <span class="username block">贾维斯</span>
-                <span class="text-muted block">高级助理</span>
+        <div class="nav-header">
+          <div class="profile-element">
+            <span class="header-image">
+              <img class="img-circle" src="http://ww3.sinaimg.cn/mw690/773cdb49gw1ehog9vbmutj2050050dg2.jpg">
+            </span>
+            <a href="#">
+              <span class="username block">贾维斯</span>
+              <span class="text-muted block">高级助理</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-cell">
+          <div class="nav-cell-header">Education</div>
+          <ul id="nav" class="nav nav-stacked" data-toggle="accordion">
+            <li class="active">
+              <a href="#collapseCss" data-parent="#nav" aria-expanded="true" aria-controls="collapseCss">
+                <i class="fa fa-th-large"></i>
+                <span class="nav-label">CSS</span>
+                <span class="fa fa-angle-left arrow pull-right"></span>
               </a>
-            </div>
-          </li>
-          <li class="active">
-            <a href="#collapseCss" data-parent="#nav" aria-expanded="true" aria-controls="collapseCss">
-              <i class="fa fa-th-large"></i>
-              <span class="nav-label">CSS</span>
-              <span class="fa fa-angle-left arrow pull-right"></span>
-            </a>
-            <ul id="collapseCss" class="nav nav-stacked nav-second-level collapse in">
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="color.html">Color</a></li>
-              <li class="active"><a href="table.html">Table</a></li>
-              <li><a href="form.html">Form</a></li>
-              <li><a href="button.html">Button</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#collapseComponent" data-parent="#nav" aria-expanded="false" aria-controls="collapseComponent">
-              <i class="fa fa-diamond"></i>
-              <span class="nav-label">Component</span>
-              <span class="fa fa-angle-left arrow pull-right"></span>
-              <span class="label label-warning pull-right">NEW</span>
-            </a>
-            <ul id="collapseComponent" class="nav nav-stacked nav-second-level collapse">
-              <li><a href="navbar.html">Navbar</a></li>
-              <li><a href="panel.html">Panel</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#collapseJavascript" data-parent="#nav" aria-expanded="false" aria-controls="collapseJavascript">
-              <i class="fa fa-flask"></i>
-              <span class="nav-label">Javascript</span>
-              <span class="fa fa-angle-left arrow pull-right"></span>
-            </a>
-            <ul id="collapseJavascript" class="nav nav-stacked nav-second-level collapse">
-              <li><a href="select2.html">Select 2</a></li>
-            </ul>
-          </li>
-        </ul>
+              <ul id="collapseCss" class="nav nav-stacked nav-second-level collapse in">
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="color.html">Color</a></li>
+                <li class="active"><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="button.html">Button</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#collapseComponent" data-parent="#nav" aria-expanded="false" aria-controls="collapseComponent">
+                <i class="fa fa-diamond"></i>
+                <span class="nav-label">Component</span>
+                <span class="fa fa-angle-left arrow pull-right"></span>
+                <span class="label label-warning pull-right">NEW</span>
+              </a>
+              <ul id="collapseComponent" class="nav nav-stacked nav-second-level collapse">
+                <li><a href="navbar.html">Navbar</a></li>
+                <li><a href="panel.html">Panel</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#collapseJavascript" data-parent="#nav" aria-expanded="false" aria-controls="collapseJavascript">
+                <i class="fa fa-flask"></i>
+                <span class="nav-label">Javascript</span>
+                <span class="fa fa-angle-left arrow pull-right"></span>
+              </a>
+              <ul id="collapseJavascript" class="nav nav-stacked nav-second-level collapse">
+                <li><a href="select2.html">Select 2</a></li>
+              </ul>
+            </li>
+          </ul>  
+        </div>
+        <div class="nav-cell">
+          <div class="nav-cell-header">Entertainment</div>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="#">
+                <i class="fa fa-gamepad"></i>
+                <span class="nav-label">Game</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
       </nav>
 
       <!-- Main Container -->

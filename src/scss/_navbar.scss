@@ -66,6 +66,23 @@
   }
 }
 
+.nav-cell {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $nav-active-bg;
+
+  + .nav-cell {
+    border-top: 1px solid lighten($nav-active-bg, 5%);
+    border-bottom: 0;
+  }
+}
+
+.nav-cell-header {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $nav-cell-color;
+  font-weight: 600;
+}
+
 .nav > li > a {
   font-weight: 600;
   color: $nav-color;

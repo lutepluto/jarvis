@@ -8,6 +8,12 @@
   transition: all .4s;
 
   li {
+    border-left: 4px solid transparent;
+
+    &:hover {
+      border-color: $nav-active-bg;
+    }
+
     + li {
       margin-top: 0;
     }
@@ -31,10 +37,6 @@
       > a .arrow {
         transform: rotate(-90deg);
       }
-    }
-
-    .nav-second-level > .active {
-      border-left: none;
     }
   }
 }
@@ -95,15 +97,21 @@
   }
 }
 
+.nav > .active > a {
+  color: #fff;
+  background-color: $nav-active-bg;
+}
+
 .nav-second-level li {
+  border-left: 0;
+
   > a {
     padding: 7px 10px;
     padding-left: 52px;
   }
 
-  &.active > a {
-    color: #fff;
-    background-color: $nav-active-bg; 
+  &.active {
+    border-left: 0;
   }
 }
 

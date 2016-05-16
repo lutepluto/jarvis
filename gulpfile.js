@@ -70,6 +70,7 @@ gulp.task('lint', function() {
  */
 gulp.task('script', ['lint'], function() {
   return gulp.src([
+      'src/scripts/heightfix.js',
       'src/scripts/util.js',
       'src/scripts/modal-adapter.js',
       'src/scripts/accordion.js'

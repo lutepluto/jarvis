@@ -1,8 +1,8 @@
 'use strict';
 
 var gulp = require('gulp'),
+  runSequence = require('run-sequence'),
   del = require('del'),
-  connect = require('gulp-connect'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
   sass = require('gulp-ruby-sass'),
@@ -17,22 +17,12 @@ var path = require('path'),
  * -------------------- Clean task --------------------
  */
 gulp.task('clean', function(cb) {
-  return del([
-    'dist'
-  ], cb)  
+  return del(['dist'], cb)
 })
 
-/**
- * -------------------- Connect task --------------------
- */
-gulp.task('connect', function() {
-  connect.server({
-    root: ROOT,
-    port: 8888,
-    livereload: true
-  })
+gulp.task('clean:docs', function(cb) {
+  return del(['docs/dist'], cb)
 })
-
 /**
  * -------------------- Image task --------------------
  */
@@ -107,6 +97,8 @@ gulp.task('vendor:js', function() {
     .pipe(gulp.dest('dist/js'))
 })
 
+gulp.task('vendor', ['vendor:font', 'vendor:css', 'vendor:js'])
+
 /**
  * -------------------- Bootstrap task --------------------
  */
@@ -125,6 +117,15 @@ gulp.task('bootstrap:js', function() {
            .pipe(gulp.dest('dist/js'))
 })
 
+gulp.task('bootstrap', ['bootstrap:font', 'bootstrap:css', 'bootstrap:js'])
+
+/**
+ * -------------------- Docs task --------------------
+ */
+gulp.task('docs', ['clean:docs'], function() {
+  return gulp.src('dist/**').pipe(gulp.dest('docs/dist'))
+})
+
 /**
  * -------------------- Watch task --------------------
  */
@@ -135,23 +136,24 @@ gulp.task('watch', function() {
 })
 
 /**
- * -------------------- Dev task --------------------
- */
-gulp.task('dev', ['connect', 'vendor:font', 'vendor:css', 'vendor:js', 'watch'])
-
-/**
  * -------------------- Build task --------------------
  */
-gulp.task('build', ['image', 'sass', 'script'], function() {
-  gulp.start([
-    'bootstrap:font', 'bootstrap:css', 'bootstrap:js',
-    'vendor:font', 'vendor:css', 'vendor:js'
-  ])
+gulp.task('build', function(cb) {
+  runSequence('clean',
+    ['bootstrap', 'vendor', 'image', 'sass', 'script'], cb)
 })
 
-gulp.task('default', ['clean'], function() {
-  gulp.start('build')
+/**
+ * -------------------- Dev task --------------------
+ */
+gulp.task('dev', ['build'], function(cb) {
+  runSequence('docs', 'watch', cb)
 })
+
+/**
+ * -------------------- Default task --------------------
+ */
+gulp.task('default', ['build'])
 
 
 

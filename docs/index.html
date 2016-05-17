@@ -1,373 +1,150 @@
-<!DOCTYPE html>
-<html lang="zh">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Jarvis Template</title>
+---
+layout: default
+title: Dashboard
+---
 
-    <!-- Bootstap -->
-    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table  table-hover">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th>用户</th>
+          <th>地区</th>
+          <th>国籍</th>
+          <th>上次登陆时间</th>
+          <th>留言</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/sauro/128.jpg">Sylvain Le Gac</td>
+          <td>Cambridge, MA</td>
+          <td>England</td>
+          <td>2016-03-01</td>
+          <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">Peter. S</td>
+          <td>Atlanta, GA</td>
+          <td>USA.</td>
+          <td>今天</td>
+          <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg">Hanna Yoshinitsu</td>
+          <td>San Francisco, CA</td>
+          <td>USA.</td>
+          <td>2016-0305</td>
+          <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
-
-    <!-- Jarvis -->
-    <link rel="stylesheet" type="text/css" href="../dist/css/jarvis.css">
-
-    <style type="text/css">
-      .table img {
-        width: 48px;
-      }
-    </style>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-    <div id="dashboard">
-
-      <!-- Side Navbar -->
-      <nav class="navbar-default navbar-side" role="navigation">
-        <div class="nav-header">
-          <div class="profile-element">
-            <span class="header-image">
-              <img class="img-circle" src="http://ww3.sinaimg.cn/mw690/773cdb49gw1ehog9vbmutj2050050dg2.jpg">
-            </span>
-            <a href="#">
-              <span class="username block">贾维斯</span>
-              <span class="text-muted block">高级助理</span>
-            </a>
-          </div>
-        </div>
-        <div class="nav-cell">
-          <div class="nav-cell-header">Education</div>
-          <ul id="nav" class="nav nav-stacked" data-toggle="accordion">
-            <li class="active">
-              <a href="#collapseCss" data-parent="#nav" aria-expanded="true" aria-controls="collapseCss">
-                <i class="fa fa-th-large"></i>
-                <span class="nav-label">CSS</span>
-                <span class="fa fa-angle-left arrow pull-right"></span>
-              </a>
-              <ul id="collapseCss" class="nav nav-stacked nav-second-level collapse in">
-                <li><a href="typography.html">Typography</a></li>
-                <li><a href="color.html">Color</a></li>
-                <li class="active"><a href="table.html">Table</a></li>
-                <li><a href="form.html">Form</a></li>
-                <li><a href="button.html">Button</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#collapseComponent" data-parent="#nav" aria-expanded="false" aria-controls="collapseComponent">
-                <i class="fa fa-diamond"></i>
-                <span class="nav-label">Component</span>
-                <span class="fa fa-angle-left arrow pull-right"></span>
-                <span class="label label-warning pull-right">NEW</span>
-              </a>
-              <ul id="collapseComponent" class="nav nav-stacked nav-second-level collapse">
-                <li><a href="navbar.html">Navbar</a></li>
-                <li><a href="panel.html">Panel</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#collapseJavascript" data-parent="#nav" aria-expanded="false" aria-controls="collapseJavascript">
-                <i class="fa fa-flask"></i>
-                <span class="nav-label">Javascript</span>
-                <span class="fa fa-angle-left arrow pull-right"></span>
-              </a>
-              <ul id="collapseJavascript" class="nav nav-stacked nav-second-level collapse">
-                <li><a href="select2.html">Select 2</a></li>
-              </ul>
-            </li>
-          </ul>  
-        </div>
-        <div class="nav-cell">
-          <div class="nav-cell-header">Entertainment</div>
-          <ul class="nav nav-stacked">
-            <li>
-              <a href="#">
-                <i class="fa fa-gamepad"></i>
-                <span class="nav-label">Game</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-music"></i>
-                <span class="nav-label">Music</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-film"></i>
-                <span class="nav-label">Film</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-tv"></i>
-                <span class="nav-label">TV Show</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
-      </nav>
-
-      <!-- Main Container -->
-      <div class="main-container">
-
-        <!-- Horizontal Navbar -->
-        <div class="row">
-          <nav class="navbar navbar-default navbar-static-top navbar-top">
-            <div class="navbar-brand">后台管理系统</div>
-            <ul class="nav navbar-nav navbar-right navbar-top-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle badge-pending" data-toggle="dropdown" role="button" aria-haspopup="true" aira-expanded="false">
-                  <i class="fa fa-envelope"></i>
-                  <span class="label label-warning">16</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown badge-pending" data-toggle="dropdown" role="button" aira-haspopip="true" aira-expanded="false">
-                  <i class="fa fa-bell"></i>
-                  <span class="label label-success">8</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>你有16条未读消息
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>你有16条未读消息
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>你有16条未读消息
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-sign-out"></i>退出
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="submenu-header">
-            <ul class="nav nav-pills submenu">
-              <li class="active"><a href="#">Submenu 1</a></li>
-              <li><a href="#">Submenu 2</a></li>
-              <li><a href="#">Submenu 3</a></li>
-              <li><a href="#">Submenu 4</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Wrapper Content -->
-        <div class="wrapper-content">
-
-          <!-- Table -->
-          <div class="row">
-            <div class="col-xs-12">
-              <table class="table  table-hover">
-                <thead>
-                  <tr>
-                    <th><input type="checkbox" /></th>
-                    <th>用户</th>
-                    <th>地区</th>
-                    <th>国籍</th>
-                    <th>上次登陆时间</th>
-                    <th>留言</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/sauro/128.jpg">Sylvain Le Gac</td>
-                    <td>Cambridge, MA</td>
-                    <td>England</td>
-                    <td>2016-03-01</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">Peter. S</td>
-                    <td>Atlanta, GA</td>
-                    <td>USA.</td>
-                    <td>今天</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
-                  </tr>
-                  <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg">Hanna Yoshinitsu</td>
-                    <td>San Francisco, CA</td>
-                    <td>USA.</td>
-                    <td>2016-0305</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Panel -->
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-heading">
-                  <h3><i class="fa fa-envelope-o"></i> New Messages</h3>
-                  <small>You have 22 new messages and 16 waiting in draft folder.</small>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="panel ">
-                <div class="panel-title">
-                  <h5>Message</h5>
-                  <div class="panel-tools">
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                  <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Form -->
-          <div class="row row-full">
-            <div class="col-xs-6">
-              <div class="block-heading">
-                <h2>横排表单</h2>
-                <div class="heading-tool">
-                  <a href="modal.html" class="label label-success" data-toggle="modal" data-target="#myModal">新建</a>
-                </div>
-              </div>
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="control-label col-xs-2">邮箱</label>
-                  <div class="col-xs-9">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-xs-2 control-label">密码</label>
-                  <div class="col-xs-9">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="col-xs-12 form-footer">
-                  <button type="submit" class="btn btn-success">确 定</button>
-                  <button type="reset" class="btn btn-default">取 消</button>
-                </div>
-              </form>
-            </div>
-
-            <div class="col-xs-6">
-              <form>
-                <div class="input-field-group">
-                  <input type="email" class="input-field" id="exampleInputEmail1-2" >
-                  <label for="exampleInputEmail1-2">邮箱</label>
-                </div>
-                <div class="input-field-group has-error">
-                  <input type="password" class="input-field" id="exampleInputPassword1-2" >
-                  <label for="exampleInputPassword1-2">密码</label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-success">Submit</button>
-                <button type="reset" class="btn btn-danger">Reset</button>
-              </form>
-            </div>
-          </div>
-
-          
+<!-- Panel -->
+<div class="row">
+  <div class="col-xs-4">
+    <div class="panel ">
+      <div class="panel-title">
+        <h5>Message</h5>
+        <div class="panel-tools">
+          <a href="#"><i class="fa fa-chevron-up"></i></a>
+          <a href="#"><i class="fa fa-times"></i></a>
         </div>
       </div>
+      <div class="panel-heading">
+        <h3><i class="fa fa-envelope-o"></i> New Messages</h3>
+        <small>You have 22 new messages and 16 waiting in draft folder.</small>
+      </div>
+      <div class="panel-body">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
+      </div>
     </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel ">
+      <div class="panel-title">
+        <h5>Message</h5>
+        <div class="panel-tools">
+          <a href="#"><i class="fa fa-chevron-up"></i></a>
+          <a href="#"><i class="fa fa-times"></i></a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel ">
+      <div class="panel-title">
+        <h5>Message</h5>
+        <div class="panel-tools">
+          <a href="#"><i class="fa fa-chevron-up"></i></a>
+          <a href="#"><i class="fa fa-times"></i></a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+        <p>All the Lorem Ipsum generators on the Internet tend to repeat</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../dist/js/jarvis.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('tbody').on('change', 'input[type="checkbox"]', function(e) {
-          e.currentTarget.checked ?
-            $(e.currentTarget).parentsUntil('tbody').last().addClass('active') :
-            $(e.currentTarget).parentsUntil('tbody').last().removeClass('active')
-        })
+<!-- Form -->
+<div class="row row-full">
+  <div class="col-xs-6">
+    <div class="block-heading">
+      <h2>横排表单</h2>
+      <div class="heading-tool">
+        <a href="modal.html" class="label label-success" data-toggle="modal" data-target="#myModal">新建</a>
+      </div>
+    </div>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="control-label col-xs-2">邮箱</label>
+        <div class="col-xs-9">
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-xs-2 control-label">密码</label>
+        <div class="col-xs-9">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <div class="col-xs-12 form-footer">
+        <button type="submit" class="btn btn-success">确 定</button>
+        <button type="reset" class="btn btn-default">取 消</button>
+      </div>
+    </form>
+  </div>
 
-        $('thead').on('change', 'input[type="checkbox"]', function(e) {
-            var $checkboxes = $(e.currentTarget)
-              .parentsUntil('table')
-              .last()
-              .next('tbody')
-              .find('tr > td:first-child > input[type="checkbox"]')
-              .each(function() {
-                $(this).prop('checked', e.currentTarget.checked).change()
-              })
-        })
-
-        $('.input-field').focus(function(e) {
-          $(e.currentTarget).next('label').addClass('active')
-        }).blur(function(e) {
-          var $input
-          ($input = $(e.currentTarget)) && !$input.val().trim() ?
-            $input.next('label').removeClass('active') : void 0
-        })
-      })
-    </script>
-
-  </body>
-</html>
+  <div class="col-xs-6">
+    <form>
+      <div class="input-field-group">
+        <input type="email" class="input-field" id="exampleInputEmail1-2" >
+        <label for="exampleInputEmail1-2">邮箱</label>
+      </div>
+      <div class="input-field-group has-error">
+        <input type="password" class="input-field" id="exampleInputPassword1-2" >
+        <label for="exampleInputPassword1-2">密码</label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+  </div>
+</div>

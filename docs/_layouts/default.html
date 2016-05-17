@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="dashboard">
+      
+      {% include nav.html %}
+
+      <div class="main-container">
+        
+        <div class="row">
+          {% include header.html %}
+        </div>
+
+        <div class="wrapper-content">
+          {{ content }}
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include script.html %}
+
+  </body>
+
+</html>

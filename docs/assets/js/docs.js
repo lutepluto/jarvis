@@ -25,6 +25,16 @@
       ($input = $(e.currentTarget)) && !$input.val().trim() ?
         $input.next('label').removeClass('active') : void 0
     })
+
+    $('#single-select').select2()
+    $('#single-select-jarvis').select2({
+      theme: 'jarvis',
+      placeholder: "Select a state"
+    })
+    $('#multiple-select-jarvis').select2({
+      theme: 'jarvis',
+      placeholder: "Select a state"
+    })
     
   })
 })(jQuery)

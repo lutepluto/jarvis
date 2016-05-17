@@ -1,0 +1,124 @@
+---
+layout: default
+title: Form
+---
+
+<!-- Form -->
+<div class="row bg-white" style="padding-bottom: 40px;">
+  <div class="col-xs-12">
+    <div class="block-heading">
+      <h2>横排表单</h2>
+      <div class="heading-tool">
+        <a href="modal.html" class="label label-success" data-toggle="modal" data-target="#myModal">新建</a>
+      </div>
+    </div>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="normalInput" class="control-label col-xs-2">Normal input</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" id="normalInput" placeholder="I am a normal form control input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="disabledInput" class="col-xs-2 control-label">Disabled input</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" id="disabledInput" disabled placeholder="I am a disabled form control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="readonlyInput" class="col-xs-2 control-label">Readonly input</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" id="readonlyInput" readonly placeholder="I am a readonly form control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="select" class="col-xs-2 control-label">Select</label>
+        <div class="col-xs-10">
+          <select class="form-control" id="select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-xs-2">Control size</label>
+        <div class="col-xs-10">
+          <p><input class="form-control input-lg" placeholder=".input-lg" type="text"></p>
+          <p><input class="form-control" placeholder="default input" type="text"></p>
+          <p><input class="form-control input-sm" placeholder=".input-sm" type="text"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-xs-2">Textarea</label>
+        <div class="col-xs-10">
+          <textarea class="form-control" rows="3" placeholder="I am a normal textarea"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-xs-2">Checkbox</label>
+        <div class="col-xs-10">
+          <div class="checkbox-inline">
+            <label><input type="checkbox" /> 1</label>
+          </div>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" /> 2</label>
+          </div>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" /> 3</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group has-success">
+        <label class="control-label col-xs-2">Radio</label>
+        <div class="col-xs-10">
+          <div class="radio-inline">
+            <label><input type="radio" /> 1</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" /> 2</label>
+          </div>
+          <div class="radio-inline">
+            <label><input type="radio" /> 3</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group has-success">
+        <label class="control-label col-xs-2">Input with success</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" placeholder="I am a success input" />
+        </div>
+      </div>
+      <div class="form-group has-error">
+        <label class="control-label col-xs-2">Input with success</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" placeholder="I am a error input" />
+        </div>
+      </div>
+      <div class="col-xs-12 form-footer">
+        <button type="submit" class="btn btn-success">确 定</button>
+        <button type="reset" class="btn btn-default">取 消</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="row bg-white">
+  <div class="col-xs-6">
+    <form>
+      <div class="input-field-group">
+        <input type="email" class="input-field" id="exampleInputEmail1-2" >
+        <label for="exampleInputEmail1-2">邮箱</label>
+      </div>
+      <div class="input-field-group has-error">
+        <input type="password" class="input-field" id="exampleInputPassword1-2" >
+        <label for="exampleInputPassword1-2">密码</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+  </div>
+</div>

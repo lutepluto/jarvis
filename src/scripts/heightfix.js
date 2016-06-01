@@ -1,5 +1,4 @@
-
-(($, window) => {
+(($) => {
 
   const $sidenav   = $('.navbar-side')
   const $container = $('.main-container')
@@ -16,11 +15,12 @@
       $container.css('min-height',
         sidenavHeight > containerHeight ?
           (sidenavHeight + 'px') :
-          (window.innerHeight + 'px')
+          (windowHeight + 'px')
       )
     }
   }
 
-  $(window).on('load resize', fixHeight)
+  $(window).on('resize', fixHeight)
+  fixHeight()
 
-})(jQuery, window)
+})(jQuery)

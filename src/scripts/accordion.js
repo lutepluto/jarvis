@@ -5,7 +5,7 @@ const Accordion = (($) => {
   const NAME                = 'accordion'
   const VERSION             = '0.0.1'  // eslint-disable-line no-unused-vars
   const DATA_KEY            = 'jar.accordion'
-  const EVENT_KEY           = `.${EVENT_KEY}`
+  const EVENT_KEY           = `.${DATA_KEY}`
   const JQUERY_NO_CONFLICT  = $.fn[NAME]  // eslint-disable-line no-unused-vars
   const TRANSITION_DURATION = 600
 
@@ -208,7 +208,7 @@ const Accordion = (($) => {
     }
   }
 
-  $(window).on(Event.LOAD, () => {
+  $(() => {
     $(Selector.DATA_TOGGLE).each(function() {
       var $accordion = $(this)
       Accordion._plugin.call($accordion, $accordion.data())

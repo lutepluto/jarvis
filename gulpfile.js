@@ -65,9 +65,9 @@ gulp.task('script', ['lint'], function() {
       'src/scripts/modal-adapter.js',
       'src/scripts/accordion.js'
     ])
-    .pipe(babel())
+    .pipe(babel({ modules: 'ignore' }))
     .pipe(concat('jarvis.js'))
-    .pipe(gulp.dest('dist/js/'))
+    .pipe(gulp.dest('dist/js'))
 })
 
 /**
@@ -85,7 +85,6 @@ gulp.task('vendor:css', function() {
       'node_modules/font-awesome/css/font-awesome.css',
       'node_modules/select2/dist/css/select2.css'
     ])
-    .pipe(concat('vendor.css'))
     .pipe(gulp.dest('dist/css'))
 })
 
@@ -93,7 +92,6 @@ gulp.task('vendor:js', function() {
   return gulp.src([
       'node_modules/select2/dist/js/select2.js'
     ])
-    .pipe(concat('vendor.js'))
     .pipe(gulp.dest('dist/js'))
 })
 

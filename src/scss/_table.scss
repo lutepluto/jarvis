@@ -4,17 +4,17 @@
   > thead > tr > th,
   > tbody > tr > td {
     padding: $table-cell-padding;
+    text-align: center;
   }
 
   > thead > tr > th {
     vertical-align: middle;
     background-color: $table-head-bg;
-    text-align: center;
   }
 
   > tbody > tr {
     > td {
-      background-color: $table-body-bg;  
+      background-color: $table-body-bg;
     }
 
     &.active,
